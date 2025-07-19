@@ -1,85 +1,42 @@
-/* Add a gradient background to the app */
-body {
-  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
-  min-height: 100vh;
-  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-}
-
-/* Center the root and add a soft shadow */
 #root {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 2.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(100, 108, 255, 0.12);
 }
 
-/* Logo styling with a soft glow */
 .logo {
-  height: 7em;
+  height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms, transform 300ms;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #61dafb22 0%, #646cff22 100%);
-  box-shadow: 0 4px 24px #646cff33;
+  transition: filter 300ms;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-  transform: scale(1.08) rotate(-8deg);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-  transform: scale(1.08) rotate(8deg);
 }
 
-/* Card style with rounded corners and shadow */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
 .card {
-  padding: 2.5em 2em;
-  margin: 2em auto;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(100, 108, 255, 0.08);
-  transition: box-shadow 0.3s;
-}
-.card:hover {
-  box-shadow: 0 4px 24px rgba(100, 108, 255, 0.18);
+  padding: 2em;
 }
 
-/* Link styling */
-a {
-  color: #646cff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-a:hover {
-  color: #61dafb;
-  text-decoration: underline;
-}
-
-/* Subtle text style for docs */
 .read-the-docs {
   color: #888;
-  font-size: 1.1em;
-  margin-top: 1em;
-  letter-spacing: 0.02em;
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  #root {
-    padding: 1rem;
-    border-radius: 12px;
-  }
-  .card {
-    padding: 1.2em 1em;
-    border-radius: 12px;
-  }
-  .logo {
-    height: 4em;
-    padding: 1em;
-  }
 }
