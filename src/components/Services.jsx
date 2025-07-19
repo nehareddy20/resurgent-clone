@@ -55,7 +55,7 @@ const styles = {
   },
   intro: {
     textAlign: 'center',
-    color: '#22223b',
+    color: '#b8c1ec',
     fontSize: '1.1rem',
     marginBottom: '40px',
     maxWidth: '700px',

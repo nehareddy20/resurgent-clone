@@ -12,16 +12,7 @@ const Hero = () => {
       </div>
       <h1 style={styles.heading}>We Create Productive Collaborative Experiences</h1>
       <p style={styles.sub}>
-        By integrating innovative and versatile video collaboration solutions into your business, we transform the way you share information and help you stay one step ahead. Always.
-      </p>
-      <p style={styles.sub}>
-        With over a decade of experience, Resurgent delivers time-efficient solutions that streamline workplace collaboration, optimise workflow, and increase productivity. Our advanced technical know-how, custom-built deployment plans, and extensive quality control programmes ensure a superior user experience and seamless functioning of technology at all times.
-      </p>
-      <p style={styles.sub}>
-        Our Enterprise Project Delivery Team aligns project delivery schedules with your business goals to keep you updated throughout the project lifecycle and ensure timely delivery. No matter your business, our scalable infrastructure solutions will simplify communication and amplify your success.
-      </p>
-      <p style={styles.sub}>
-        We are Resurgent, and we’re ready to transform the digital experiences for your team now and for the future.
+        Resurgent delivers innovative video collaboration solutions that help you share information and stay ahead. With over a decade of experience, we streamline workplace collaboration, optimise workflow, and boost productivity. Our expert team ensures seamless technology integration and timely project delivery, so your business can communicate better and succeed faster.
       </p>
     </section>
   );
