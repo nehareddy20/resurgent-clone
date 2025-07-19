@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: <Rocket size={32} className="text-[#80cbc4]" />,
-    title: "Scalable Solutions",
-    description: "Tailored systems that grow with your business needs.",
+    title: "Seamless Collaboration",
+    description: "Effortless video and AV integration for teams.",
   },
   {
     icon: <Code2 size={32} className="text-[#80cbc4]" />,
-    title: "Robust Code",
-    description: "Clean, optimized, and secure codebase development.",
+    title: "Custom Solutions",
+    description: "Tailored AV setups for every industry.",
   },
   {
     icon: <Lightbulb size={32} className="text-[#80cbc4]" />,
-    title: "Innovative Ideas",
-    description: "Creative tech-driven strategies to solve real problems.",
+    title: "Expert Delivery",
+    description: "On-time, reliable project execution.",
   },
 ];
 
