@@ -56,7 +56,7 @@ const styles = {
     margin: '0 auto',
   },
   heading: {
-    fontSize: '3rem',
+    fontSize: '2.4rem',
     marginBottom: '10px',
     color: '#f4f4f4',
     fontWeight: '700',
