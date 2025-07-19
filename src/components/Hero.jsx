@@ -12,7 +12,6 @@ const Hero = () => {
       </div>
       <h1 style={styles.heading}>We Build Brands That Matter</h1>
       <p style={styles.sub}>Branding • Marketing • Digital Strategy</p>
-      <a href="#contact" style={styles.button}>Let’s Connect</a>
     </section>
   );
 };
