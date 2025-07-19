@@ -10,8 +10,19 @@ const Hero = () => {
           style={styles.image}
         />
       </div>
-      <h1 style={styles.heading}>We Build Brands That Matter</h1>
-      <p style={styles.sub}>Branding • Marketing • Digital Strategy</p>
+      <h1 style={styles.heading}>We Create Productive Collaborative Experiences</h1>
+      <p style={styles.sub}>
+        By integrating innovative and versatile video collaboration solutions into your business, we transform the way you share information and help you stay one step ahead. Always.
+      </p>
+      <p style={styles.sub}>
+        With over a decade of experience, Resurgent delivers time-efficient solutions that streamline workplace collaboration, optimise workflow, and increase productivity. Our advanced technical know-how, custom-built deployment plans, and extensive quality control programmes ensure a superior user experience and seamless functioning of technology at all times.
+      </p>
+      <p style={styles.sub}>
+        Our Enterprise Project Delivery Team aligns project delivery schedules with your business goals to keep you updated throughout the project lifecycle and ensure timely delivery. No matter your business, our scalable infrastructure solutions will simplify communication and amplify your success.
+      </p>
+      <p style={styles.sub}>
+        We are Resurgent, and we’re ready to transform the digital experiences for your team now and for the future.
+      </p>
     </section>
   );
 };
@@ -60,18 +71,11 @@ const styles = {
     fontWeight: '700',
     letterSpacing: '1px',
   },
-  button: {
-    padding: '12px 32px',
-    backgroundColor: '#58a6ff',
-    color: '#fff',
-    borderRadius: '8px',
-    fontWeight: '600',
-    fontSize: '1.1rem',
-    textDecoration: 'none',
-    boxShadow: '0 2px 8px rgba(88, 166, 255, 0.15)',
-    transition: 'background 0.2s, color 0.2s',
-    border: 'none',
-    cursor: 'pointer',
+  sub: {
+    fontSize: '1.2rem',
+    marginBottom: '18px',
+    color: '#b8c1ec',
+    maxWidth: '900px',
   },
 };
 
