@@ -1,8 +1,10 @@
+import image from '/image.png';
+
 const Hero = () => {
   return (
     <section style={styles.hero}>
       <img
-        src={require('../image.png')}
+        src={image}
         alt="Hero"
         style={styles.image}
       />
