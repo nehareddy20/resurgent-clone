@@ -60,11 +60,6 @@ const styles = {
     fontWeight: '700',
     letterSpacing: '1px',
   },
-  sub: {
-    fontSize: '1.2rem',
-    marginBottom: '30px',
-    color: '#b8c1ec',
-  },
   button: {
     padding: '12px 32px',
     backgroundColor: '#58a6ff',
