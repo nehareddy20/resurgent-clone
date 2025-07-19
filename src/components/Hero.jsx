@@ -2,7 +2,7 @@ import image from '/image.png';
 
 const Hero = () => {
   return (
-    <section style={styles.hero}>
+    <section id="home" style={styles.hero}>
       <div style={styles.imageWrapper}>
         <img
           src={image}
