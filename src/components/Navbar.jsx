@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav style={styles.nav}>
       <div style={styles.container}>
-        <div style={styles.logo}>Resurgent</div>
+        <div style={styles.logo}>Resurgent AV Integrators Pvt Ltd</div>
 
         <div style={{ ...styles.links, ...(open ? styles.showMobile : {}) }}>
           {["home", "about", "services", "contact"].map((item) => (
