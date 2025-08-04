@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "public/image_1.png", // Office
-  "public/image_2.png", // Team collab
-  "public/image_3.png", // Conference
-  "public/image_4.png", // Discussion
+  "./public/image_1.png", // Office
+  "resurgent-clone/public/image_2.png", // Team collab
+  "resurgent-clone\public\image_3.png", // Conference
+  ".\public\image_4.png", // Discussion
 ];
 
 const Hero = () => {

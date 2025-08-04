@@ -102,7 +102,7 @@ const data = [
   {
     title: "Residential",
     text: "From home automation and home theatres to lighting control systems, our bespoke audiovisual solutions help transform homes into more personalised spaces.",
-    icon: "https://images.pexels.com/photos/8133504/pexels-photo-8133504.jpeg?auto=compress&cs=tinysrgb&w=800", // Home theater setup
+    icon: "https://images.unsplash.com/photo-1616486888577-1d4d5d91b8f4?fit=crop&w=800&q=80", // Home theater setup
   },
 ];
 
