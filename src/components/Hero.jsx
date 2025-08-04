@@ -93,6 +93,25 @@ const styles = {
     color: "#b8c1ec",
     maxWidth: "900px",
   },
+  imageWrapper: {
+    position: "relative",
+    width: "100%",
+    maxWidth: "900px",
+    height: "400px", // 👈 Fixed height
+    overflow: "hidden",
+    borderRadius: "20px",
+    marginBottom: "2rem",
+  },
+
+  image: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover", // 👈 Prevents stretching/squishing
+    borderRadius: "20px",
+  }
 };
 
 export default Hero;
