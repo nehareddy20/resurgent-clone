@@ -1,19 +1,26 @@
+import { motion } from "framer-motion";
+
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
+    <motion.footer
+      style={styles.footer}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <p>&copy; {new Date().getFullYear()} Resurgent Co. All rights reserved.</p>
-    </footer>
+    </motion.footer>
   );
 };
 
 const styles = {
   footer: {
-    backgroundColor: '#161b22',
-    padding: '20px',
-    textAlign: 'center',
-    color: '#8b949e',
-    borderTop: '1px solid #30363d',
-    fontSize: '0.9rem',
+    backgroundColor: "#161b22",
+    padding: "20px",
+    textAlign: "center",
+    color: "#8b949e",
+    borderTop: "1px solid #30363d",
+    fontSize: "0.9rem",
   },
 };
 
