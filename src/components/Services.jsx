@@ -52,11 +52,17 @@ const Services = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(88, 166, 255, 0.4)" }}
-            style={styles.card}
+            whileHover={{ scale: 1.07 }}
+            style={{ ...styles.card, position: "relative" }}
           >
+            <img src={item.icon} alt="" style={styles.icon} />
             <h3>{item.title}</h3>
             <p>{item.text}</p>
+            <motion.div
+              style={styles.glow}
+              animate={{ opacity: [0.1, 0.3, 0.1] }}
+              transition={{ duration: 4, repeat: Infinity }}
+            />
           </motion.div>
         ))}
       </div>
@@ -67,27 +73,33 @@ const Services = () => {
 const data = [
   {
     title: "Corporate",
-    text: "Our AV solutions for businesses are designed to transcend spaces and connect people across multiple locations and devices, empowering teams as they work towards a common goal.",
+    text: "Our AV solutions for businesses are designed...",
+    icon: "https://cdn-icons-png.flaticon.com/512/2620/2620612.png",
   },
   {
     title: "Education",
-    text: "By augmenting lessons and boosting interaction, our AV integration solutions enrich the learning and teaching experience in both traditional and digital classrooms.",
+    text: "By augmenting lessons and boosting interaction...",
+    icon: "https://cdn-icons-png.flaticon.com/512/906/906175.png",
   },
   {
     title: "Healthcare",
-    text: "Our integrated AV solutions for hospitals are designed to deliver precision and speed through advanced software and audiovisual equipment with a wide range of applications.",
+    text: "Our integrated AV solutions for hospitals are designed...",
+    icon: "https://cdn-icons-png.flaticon.com/512/2965/2965567.png",
   },
   {
     title: "Public Sector",
-    text: "Our audiovisual solutions for the public sector cover a wide spectrum of requirements and applications, using the latest technology to aid faster decision-making.",
+    text: "Our audiovisual solutions for the public sector cover...",
+    icon: "https://cdn-icons-png.flaticon.com/512/1087/1087920.png",
   },
   {
     title: "Retail",
-    text: "Whether it's wayfinding, digital signage or virtual support, our audiovisual solutions for the retail sector can enhance customer interactions.",
+    text: "Whether it's wayfinding, digital signage or virtual support...",
+    icon: "https://cdn-icons-png.flaticon.com/512/1111/1111513.png",
   },
   {
     title: "Residential",
-    text: "From home automation and home theatres to lighting control systems, our bespoke audiovisual solutions help transform homes into more personalised spaces.",
+    text: "From home automation and home theatres to lighting...",
+    icon: "https://cdn-icons-png.flaticon.com/512/263/263115.png",
   },
 ];
 
@@ -120,6 +132,22 @@ const styles = {
     boxShadow: "0 0 12px rgba(88, 166, 255, 0.2)",
     transition: "all 0.3s ease-in-out",
   },
+  icon: {
+  width: "50px",
+  height: "50px",
+  marginBottom: "10px",
+  },
+  glow: {
+    position: "absolute",
+    top: "-10%",
+    left: "-10%",
+    width: "120%",
+    height: "120%",
+    borderRadius: "20px",
+    background: "radial-gradient(circle at center, #58a6ff33, transparent)",
+    zIndex: -1,
+    filter: "blur(20px)",
+  }
 };
 
 export default Services;
