@@ -1,47 +1,45 @@
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const images = [
+  "https://images.unsplash.com/photo-1556761175-129418cb2dfe", // Office
+  "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7", // Team collab
+  "https://images.unsplash.com/photo-1581092580491-72a9d0cc0ee8", // Conference
+  "https://images.unsplash.com/photo-1581090700227-1e8e9081a0c5", // Discussion
+];
 
 const Hero = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 2500); // 2.5 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <motion.section
-      id="home"
-      style={styles.hero}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    >
+    <section id="home" style={styles.hero}>
       <div style={styles.imageWrapper}>
-        {/* Background image slide-in */}
-        <motion.img
-          src="https://images.unsplash.com/photo-1556761175-129418cb2dfe"
-          alt="Office Teamwork"
-          style={styles.backgroundImage}
-          initial={{ scale: 1.1, opacity: 0, x: -100 }}
-          animate={{ scale: 1, opacity: 1, x: 0 }}
-          transition={{ duration: 1.2 }}
-        />
-
-        {/* Foreground floating image */}
-        <motion.img
-          src="https://images.unsplash.com/photo-1581090700227-1e8e9081a0c5"
-          alt="Overlay Collab"
-          style={styles.floatingImage}
-          animate={{ y: [0, -10, 0] }}
-          transition={{ repeat: Infinity, duration: 5 }}
-        />
-
-        {/* Light beam shimmer */}
-        <motion.div
-          style={styles.beam}
-          animate={{ x: ["-100%", "150%"] }}
-          transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-        />
+        <AnimatePresence>
+          <motion.img
+            key={currentIndex}
+            src={images[currentIndex]}
+            alt="Carousel"
+            style={styles.image}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          />
+        </AnimatePresence>
       </div>
 
       <motion.h1
         style={styles.heading}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.5 }}
       >
         We Create Productive Collaborative Experiences
       </motion.h1>
@@ -50,67 +48,45 @@ const Hero = () => {
         style={styles.sub}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6 }}
+        transition={{ delay: 0.7 }}
       >
-        Resurgent delivers innovative video collaboration solutions that help you share information and stay ahead...
+        Resurgent delivers innovative video collaboration solutions that help you share information and stay ahead. With over a decade of experience, we streamline workplace collaboration, optimise workflow, and boost productivity. Our expert team ensures seamless technology integration and timely project delivery, so your business can communicate better and succeed faster.
       </motion.p>
-    </motion.section>
+    </section>
   );
 };
 
 const styles = {
   hero: {
-    position: "relative",
-    overflow: "hidden",
     minHeight: "90vh",
+    padding: "3rem 1rem",
+    background: "linear-gradient(to bottom, #111827, #0d1117)",
+    textAlign: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    textAlign: "center",
-    background: "linear-gradient(to bottom, #111827, #0d1117)",
-    padding: "3rem 1rem",
-    borderRadius: "2rem",
   },
   imageWrapper: {
     position: "relative",
     width: "100%",
     maxWidth: "900px",
-    marginBottom: "2rem",
+    height: "400px",
     overflow: "hidden",
     borderRadius: "20px",
+    marginBottom: "2rem",
   },
-  backgroundImage: {
+  image: {
+    position: "absolute",
     width: "100%",
-    height: "auto",
-    borderRadius: "20px",
-    objectFit: "cover",
-    boxShadow: "0 8px 30px rgba(0,0,0,0.4)",
-  },
-  floatingImage: {
-    position: "absolute",
-    top: "20%",
-    right: "-10%",
-    width: "180px",
-    height: "auto",
-    borderRadius: "16px",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
-    opacity: 0.85,
-  },
-  beam: {
-    position: "absolute",
-    top: 0,
-    left: 0,
     height: "100%",
-    width: "30%",
-    background: "linear-gradient(to right, transparent, rgba(255,255,255,0.06), transparent)",
-    transform: "rotate(15deg)",
-    pointerEvents: "none",
+    objectFit: "cover",
+    borderRadius: "20px",
   },
   heading: {
     fontSize: "2.4rem",
-    marginBottom: "10px",
     color: "#f4f4f4",
     fontWeight: "700",
+    marginBottom: "1rem",
   },
   sub: {
     fontSize: "1.2rem",
