@@ -77,7 +77,7 @@ const data = [
   {
     title: "Corporate",
     text: "Our AV solutions for businesses are designed to transcend spaces and connect people across multiple locations and devices, empowering teams as they work towards a common goal.",
-    icon: "https://images.unsplash.com/photo-1603354350317-6e8b9170e376?fit=crop&w=400&q=80", // Business meeting room
+    icon: "https://images.unsplash.com/photo-1581091012184-7a73a5a0f1b2?fit=crop&w=800&q=80", // Business meeting room
   },
   {
     title: "Education",
@@ -87,12 +87,12 @@ const data = [
   {
     title: "Healthcare",
     text: "Our integrated AV solutions for hospitals are designed to deliver precision and speed through advanced software and audiovisual equipment with a wide range of applications.",
-    icon: "https://images.unsplash.com/photo-1588776814546-ec7d4a34c9a2?fit=crop&w=400&q=80", // Hospital equipment
+    icon: "https://images.unsplash.com/photo-1588776814546-ec7d4a34c9a2?fit=crop&w=800&q=80", // Hospital equipment
   },
   {
     title: "Public Sector",
     text: "Our audiovisual solutions for the public sector cover a wide spectrum of requirements and applications, using the latest technology to aid faster decision-making.",
-    icon: "https://images.unsplash.com/photo-1581092580491-72a9d0cc0ee8?fit=crop&w=400&q=80", // Government boardroom
+    icon: "https://images.unsplash.com/photo-1581092334500-06b29bdc1d36?fit=crop&w=800&q=80", // Government boardroom
   },
   {
     title: "Retail",
