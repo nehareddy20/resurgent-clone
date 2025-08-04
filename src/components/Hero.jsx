@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const images = [
   "https://resurgent.co.in/wp-content/themes/resurgent/assets/home/team.webp",
   "https://resurgent.co.in/wp-content/themes/resurgent/assets/home/public.webp",
-  "https://resurgent.co.in/wp-content/themes/resurgent/assets/common/about.webp",
+  "https://resurgent.co.in/wp-content/themes/resurgent/assets/home/healthcare.webp",
   "https://resurgent.co.in/wp-content/themes/resurgent/assets/common/career-4.webp",
 ];
 
