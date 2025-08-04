@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "https://images.unsplash.com/photo-1556761175-129418cb2dfe", // Office
-  "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7", // Team collab
-  "https://images.unsplash.com/photo-1581092580491-72a9d0cc0ee8", // Conference
-  "https://images.unsplash.com/photo-1581090700227-1e8e9081a0c5", // Discussion
+  "public\image_1.png", // Office
+  "public\image_2.png", // Team collab
+  "public\image_3.png", // Conference
+  "public\image_4.png", // Discussion
 ];
 
 const Hero = () => {

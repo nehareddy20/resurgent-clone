@@ -92,7 +92,7 @@ const data = [
   {
     title: "Public Sector",
     text: "Our audiovisual solutions for the public sector cover a wide spectrum of requirements and applications, using the latest technology to aid faster decision-making.",
-    icon: "https://images.pexels.com/photos/4389642/pexels-photo-4389642.jpeg?auto=compress&cs=tinysrgb&w=800", // Government boardroom
+    icon: "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800", // Government boardroom
   },
   {
     title: "Retail",
@@ -102,7 +102,7 @@ const data = [
   {
     title: "Residential",
     text: "From home automation and home theatres to lighting control systems, our bespoke audiovisual solutions help transform homes into more personalised spaces.",
-    icon: "https://images.unsplash.com/photo-1599423300746-b62533397364?fit=crop&w=400&q=80", // Home theater setup
+    icon: "https://images.pexels.com/photos/7058610/pexels-photo-7058610.jpeg?auto=compress&cs=tinysrgb&w=800", // Home theater setup
   },
 ];
 
